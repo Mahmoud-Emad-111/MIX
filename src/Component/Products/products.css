@@ -1,0 +1,114 @@
+.products {
+  text-transform: capitalize;
+}
+.products .slick-arrow {
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+}
+.products .slick-arrow::before {
+  font-size: 40px;
+  color: rgb(160, 160, 160);
+  opacity: 1;
+}
+.products .product {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0px 1%;
+  width: 97% !important;
+  border: 1px solid rgb(179, 179, 179);
+  background: linear-gradient(158deg, rgba(216, 216, 216, 0.44) -81%, rgb(255, 255, 255) 66%);
+  color: rgb(23, 23, 23);
+}
+.products .product h4 {
+  text-align: center;
+}
+.products .product .product_image img {
+  width: 100px;
+  height: 100px;
+}
+.products .product .product_buy, .products .product .product_price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .product .product_price {
+  justify-content: space-evenly;
+}
+.products .product .product_price span {
+  padding: 3px;
+  font-weight: bold;
+  display: block;
+  color: white;
+  background-color: rgba(4, 4, 4, 0.8352941176);
+  border-radius: 5px;
+}
+.products .product .product_price span:last-of-type {
+  display: flex;
+  align-items: center;
+}
+.products .product .product_buy {
+  margin-top: 1rem;
+}
+.products .product .product_buy button {
+  cursor: pointer;
+  color: white;
+  background-color: #040404;
+  font-size: 14px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.products .product .product_buy svg {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 720px) {
+  .products .slick-arrow::before {
+    font-size: 30px;
+  }
+  .products .product {
+    padding: 20px 10px;
+  }
+  .products .product .product_image img {
+    height: 70px;
+    width: 70px;
+  }
+  .products .product h4 {
+    font-size: 12px;
+  }
+  .products .product_price span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 570px) {
+  .products .product {
+    padding: 25px 10px;
+  }
+  .products .product .product_image img {
+    height: 60px;
+    width: 60px;
+  }
+  .products .product h4 {
+    font-size: 11px;
+  }
+  .products .product_price {
+    justify-content: space-between !important;
+  }
+  .products .product_price span {
+    font-size: 11px;
+  }
+  .products .product_buy button {
+    font-size: 11px !important;
+  }
+  .products .product_buy svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}/*# sourceMappingURL=products.css.map */

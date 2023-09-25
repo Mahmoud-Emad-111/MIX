@@ -1,0 +1,85 @@
+.top_rate{
+    text-transform: capitalize;
+    margin: 5rem 0px;
+    h2{
+        font-size: 50px;
+    }
+    .top_rate_items{
+        grid-gap: 25px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+
+        .top_rate_item{
+
+            box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.84);
+            background:black;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            position: relative;
+            transition-duration: 0.5s;
+            &:hover{
+                transform:scale(1.1);
+                box-shadow: 0 3px 10px 2px rgb(0 0 0);
+            }
+            .rate_item_price, .rate_item_buy{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .rate_item_price{
+                margin-bottom: 2rem;
+
+                span{
+                    color:#0f0f0f;
+                    font-weight: bold;
+                    padding: 5px;
+                    background-color: hsla(0,0%,100%,.835);
+                    border-radius: 0.45rem;
+                    box-shadow: 0 6px 6px -3px hsl(0deg 0% 100% / 84%);
+                }
+            }
+            .rate_item_buy{
+                button{
+                    color:#0f0f0f;
+                    font-weight: bold;
+                    font-size: 15px;
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px 7px;
+                    background-color: hsla(0,0%,100%,.835);
+                    border-radius: 0.45rem;
+                    box-shadow: 0 6px 6px -3px hsl(0deg 0% 100% / 84%);
+                    &:last-of-type{
+                        padding:  7px;
+                    }
+                    &:hover{
+                        background-color: hsla(0,0%,100%,.835);
+
+                    }
+                }
+                svg{
+                    width: 22px;
+                    height: 22px;
+                }
+
+            }
+            .rate_item_image{
+                margin-top: 1rem;
+
+                img{
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+
+        }
+    }
+}

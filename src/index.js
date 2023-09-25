@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './Redux/STORE/store';
+import { Provider } from 'react-redux';
+import Nav_bar from './Component/Nav_Bar/Nav_bar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store} >
+        {/* <Nav_bar/> */}
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

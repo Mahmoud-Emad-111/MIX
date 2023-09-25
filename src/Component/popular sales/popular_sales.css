@@ -1,0 +1,47 @@
+.popular_sales {
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+.popular_sales h2 {
+  font-size: 50px;
+}
+.popular_sales .popular_sales_items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.popular_sales .popular_sales_items .popular_sales_item {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f5f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_data {
+  flex: 2;
+  padding-left: 10px;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_data span {
+  color: #9ca0a1;
+  font-size: 25px;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_data h3 {
+  margin-top: 10px;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_data button {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  border: 0;
+  background-color: black;
+  color: white;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_image {
+  flex: 1;
+}
+.popular_sales .popular_sales_items .popular_sales_item .popular_item_image img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=popular_sales.css.map */

@@ -1,0 +1,214 @@
+
+.nav_bar{
+    background-color: black;
+    padding: 6px 0px;
+    .content_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left_nav{
+            h1{
+                font-weight: 900;
+                margin: 0;
+                color: white;
+            }
+        }
+        svg
+        {
+            color: white;
+        }
+            .right_nav{
+                position: relative;
+                form{
+                display: flex;
+                margin-bottom: -6px;
+                align-items: center;
+                input{
+                    outline: none;
+                    padding: 9px;
+                    
+                    border: none;
+                    border-radius: 10px  ;
+                }
+                button{
+                    svg{
+                        color: white;
+                    }
+                    padding: 1px 10px;
+                    background-color: black;
+                    border-radius: 0px 5px 5px 0px  ;
+                
+                }
+
+            }
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                svg{
+                    cursor: pointer;
+                    
+                    width: 24px;
+                    height:24px;
+                }
+            }
+        
+    }
+    .active_bar{
+        display:block !important;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        height: 100%;
+        right: 0;
+        box-shadow: 2px 0 17px #000;
+        background:hsla(0,0%,100%,.502);
+        backdrop-filter: blur(8px);
+        width: 35%;
+        border-radius: 0  0 5px 5px;
+        .bar_close{
+            width: 100%;
+            background-color:white;
+            height: 57px;
+            position: relative;
+            svg{
+                color: black;
+                position: absolute;
+                width:40px;
+                height: 40px;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            padding: 0;
+            svg{
+                color: black;
+            }
+            flex-direction: column;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: black;
+                font-weight: bold;
+                padding:10px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                position: relative;
+                transition-duration: 0.3s;
+                &:hover{
+                    padding-left: 30px;
+                }
+                &:last-of-type{
+                    margin-bottom: -10px;
+                }
+                cursor: pointer;
+                &:not(:last-child):after
+                {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color:rgb(137, 137, 137);
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+        }
+    }
+    .close_bar{
+        display: none;
+    }
+}
+
+//////////////////////////////////
+@media (max-width:900px) {
+    .nav_bar{
+        .active_bar{
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .nav_bar{
+        .active_bar{
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .nav_bar{
+        .right_nav{
+            svg{
+                width: 19px !important;
+                height: 19px !important;
+            }
+            input{
+                padding: 7px !important;
+            }
+
+        }
+        .active_bar{
+            svg{
+
+                width: 25px !important;
+                height: 25px !important;
+            }
+            .bar_close{
+                svg{
+
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .nav_bar{
+        .left_nav{
+            h1{
+                font-size: 28px;
+            }
+        }
+
+        .right_nav{
+
+            input{
+                padding: 7px 5px !important;
+            }
+        }
+    }
+}
+
+@media (max-width:410px) {
+    .nav_bar{
+        padding-bottom: 10px;
+        .left_nav{
+            h1{
+                font-size: 20px;
+            
+            }
+        }
+        .right_nav{
+
+            input{
+            
+                border-radius: 5px;
+                width: 140px;
+                padding: 7px 4px !important;
+            }
+
+        }
+    }
+}
+// #f9b803
+// #ffbc00

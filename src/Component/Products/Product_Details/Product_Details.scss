@@ -1,0 +1,105 @@
+.product_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    .p_d_left{
+        // flex: 1.5;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: black;
+        text-align: center;
+        flex: 1;
+        position: relative;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:80%;
+            // width: 100%;
+        }
+    
+    }
+    .p_d_right{
+        
+        
+        flex: 1;
+        .name_and_price{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            span{
+                padding: 2px 5px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: black;
+                border: 3px solid black;
+                border-radius: 5px;
+                color:white;
+            }
+        }
+        .description{
+            text-align: center;
+            button{
+                background-color: black;
+                border: 1px solid black;
+                color: white;
+                // width: 150px;
+                // height: 50px;
+                margin-top: 20px;
+                border-radius: 2px;
+                padding: 6px 35px;
+                font-size: 18px;
+                transition-duration: 0.3s;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                    background-color: white;
+
+                }
+            }
+            padding: 0px 20px;
+            p{
+                font-size: 15px;
+                font-weight: 600;
+                text-align:center;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .p_d_right{
+        h1{
+            font-size: 20px !important;
+        }
+        span{
+            font-size: 16px !important;
+        }
+        .description{
+            p{
+
+                font-size: 10px !important;
+                font-weight: 200;
+            }
+            
+
+            
+            button{
+               font-size:  15px !important;
+                padding: 6px 25px !important;
+            }
+            // color: red;
+        }
+    }
+    .name_and_price{
+        span{
+            font-size: 15px;
+        }
+    }
+}
+
+
+

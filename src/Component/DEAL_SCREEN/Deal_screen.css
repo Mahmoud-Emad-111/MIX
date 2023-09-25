@@ -1,0 +1,111 @@
+.deal_screen {
+  text-transform: capitalize;
+  background: black;
+  margin-bottom: 5rem;
+  padding: 0px 1rem;
+}
+.deal_screen .slick-arrow::before {
+  font-size: 30px;
+}
+.deal_screen .slick-next {
+  transform: translateX(-50%);
+}
+.deal_screen .data_screen_content {
+  width: 100%;
+  padding: 6rem 0px 0px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  color: white;
+}
+.deal_screen .data_screen_content .deal_screen_image {
+  flex: 1.2;
+}
+.deal_screen .data_screen_content .deal_screen_image img {
+  width: 95%;
+  height: 95%;
+}
+.deal_screen .data_screen_content .deal_screen_data {
+  flex: 1;
+  text-align: center;
+}
+.deal_screen .data_screen_content .deal_screen_data h2 {
+  font-size: 40px;
+}
+.deal_screen .data_screen_content .deal_screen_data .deal_screen_price span {
+  font-size: 40px;
+  font-weight: 100;
+}
+.deal_screen .data_screen_content .deal_screen_data .deal_screen_price span:first-of-type {
+  color: rgba(238, 238, 238, 0.415);
+  text-decoration: line-through;
+  margin-right: 30px;
+}
+.deal_screen .data_screen_content .deal_screen_data button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.deal_screen .data_screen_content .deal_screen_data button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 904px) {
+  .deal_screen .data_screen_content .deal_screen_data h2 {
+    font-size: 30px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data .deal_screen_price span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 691px) {
+  .deal_screen .data_screen_content {
+    padding-top: 3rem;
+  }
+  .deal_screen .data_screen_content .deal_screen_data h2 {
+    font-size: 25px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data .deal_screen_price span {
+    font-size: 30px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 584px) {
+  .deal_screen .slick-arrow::before {
+    font-size: 22px;
+  }
+  .deal_screen .data_screen_content {
+    padding: 2rem 0px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data h2 {
+    font-size: 20px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data .deal_screen_price span {
+    font-size: 20px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data button {
+    font-size: 11px;
+    padding: 8px 18px;
+  }
+}
+@media (max-width: 477px) {
+  .deal_screen .data_screen_content .deal_screen_data h2 {
+    font-size: 17px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data .deal_screen_price span {
+    font-size: 15px;
+  }
+  .deal_screen .data_screen_content .deal_screen_data button {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+}/*# sourceMappingURL=Deal_screen.css.map */
