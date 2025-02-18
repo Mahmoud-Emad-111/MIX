@@ -3,14 +3,16 @@
   background-color: #f5f7f9;
 }
 .section .section_content {
-  display: grid;
-  gap: 20px;
+  display: flex;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .section .section_content .section_item {
+  flex: 1;
   padding: 2rem 0px;
   text-align: center;
+  min-width: 250px;
 }
 .section .section_content .section_item img {
   height: auto;

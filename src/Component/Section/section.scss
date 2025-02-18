@@ -2,14 +2,16 @@
     margin: 9rem 0px;
     background-color: #f5f7f9;
     .section_content{
-        display: grid;
-        
-        gap:20px;
+        display: flex;
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        flex-wrap: wrap;
+        
         .section_item{
+            flex: 1;
             padding: 2rem 0px;
             text-align: center;
+            min-width: 250px;
             img{
                 height: auto;
                 max-width: 100%;
